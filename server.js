@@ -30,12 +30,29 @@ app.get("/Baraadsar",function (req,res) {
   res.sendFile(__dirname+"/baraadsar.html")
 })
 
+app.get("/4-Dham",function (req,res) {
+  res.sendFile(__dirname+"/4-dham.html")
+})
+
 app.get("/contact",function (req,res) {
     res.sendFile(__dirname+"/contact.html")
 })
+
 app.get("/about",function (req,res) {
     res.sendFile(__dirname+"/about.html")
 })
+
+// social media links
+app.get("https://www.facebook.com/profile.php?id=100023814220111&mibextid=ZbWKwL",function (req,res) {
+})
+
+app.get("https://instagram.com/happytriptohimalaya?igshid=ZDdkNTZiNTM=",        function (req,res) {
+})
+
+app.get("https://youtube.com/@HappytriptoHimalaya-Treking",
+  function (req,res) {
+})
+
 app.post("/send", (req, res) => {
     const { Username, email, phone, Date, message } = req.body;
     console.log(Username + email + phone + message);
