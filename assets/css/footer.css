@@ -1,0 +1,11 @@
+/*############### FOOTER #############*/
+.footer{
+    background: rgb(1, 1, 24);
+    text-align: center;
+    padding: 2rem;
+    color: cornsilk;
+}
+.social-media-links i{
+    margin: 1.5rem;
+    color: #f7f7f7;
+}

@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=EB+Garamond&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #98dfd6; */
+}
+
+/* ######  Header  #####*/
+.header{
+    height:95vh ;
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.05)), url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ .logo,
+ .navbar a{
+    
+    text-decoration: none;
+
+}
+.navbar{
+    padding: 1rem;
+}
+.navbar .logo{
+    float: left;
+
+}
+.navbar .nav-items{
+    float: right; 
+    margin-top: 1rem;
+    
+    
+}
+.navbar .item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar a{
+    color: black;
+    padding-bottom: 0.3rem;
+}
+
+.navbar ul li a:hover{
+    color: #f25a67;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*#####  List Items  #####*/
+
+ul li{
+   list-style: none; 
+   
+}a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    
+}
+p,li{
+   font-size: 1.6rem; 
+   margin-bottom: 0.5em; /* 50% of font-size*/
+   letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+/*#########    utility classes   #########*/
+.containerHead{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+.lg-heading{
+    font-size: 3.5rem;
+    font-family: 'Montserrat';
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color:#ddd ;
+}
+.text-black{
+    color: black;
+}
+.text-gray{
+    color: black;
+}
+
+.bg-dark{
+    background-color: rgb(74, 10, 176);
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 00.5em;
+}
+.btn-primary{
+    background: whitesmoke;
+    border-radius: 100px;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+/*########  header-content  #######*/
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+ 
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/*############### STYLE SHOW CASE ###############*/
+.showcase{
+background: #ddf7e3;
+padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgb(0,0,0,0.3);
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row2{
+    margin-bottom: 10rem;
+}
+.row1 .image-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .image-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row1 .image-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row .image-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+    
+} 
+.row .image-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bm{
+    border: 2px solid red;
+}
+
+
+/*############### FEATURES SECTION STYLING ################*/
+
+.features{
+    padding: 0 0 10rem 0;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgb(0,0,0,0.4);
+}
+.box{
+    width: 33.333%;
+    float: left;
+    padding: 1rem;
+    text-align: center;
+}
+.box-1, .box-3{
+    background-color: #fff6bd;
+}
+.box-2{
+    background-color: #ffd4b2;
+   
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*############### FOOTER #############*/
+.footer{
+    background: rgb(1, 1, 24);
+    text-align: center;
+    padding: 2rem;
+    color: cornsilk;
+}
+.social-media-links i{
+    margin: 1.5rem;
+    color: #f7f7f7;
+}
+ /*####### About Page ########*/
+
+ .about{
+     padding: 5rem 0;
+ }
+ .about-heading::after{
+     content: ' ';
+     display: block;
+     border: 4px solid #e7ab9a;
+     width: 100%;
+ }
+
+ /*###### About Wrapper Styling ######*/
+ .about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+ .about-wrapper .left{
+     width: 50%;
+     float: left;
+
+ }
+ .about-wrapper .right{
+     width: 50%;
+     float: right;
+
+ }
+
+ .about-wrapper::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .about-wrapper li::before{
+     content: '\2713';
+     color: rgb(236, 14, 14);
+     font-weight: bold;
+     padding: 1rem;
+ }
+
+ /*###### Count Styling #######*/
+
+ .counts{
+     margin-top: 3rem;
+ }
+  .count-item{
+     float: left;
+     width: 25%;
+     text-align: center;
+
+ }
+ .counts::after{
+     content: '';
+     display:block;
+     clear: both;
+ }
+ .count-item span{
+     font-size: 3rem;
+     font-weight: 700;
+     color: rgb(236, 14, 14);
+ }
+ .count-item p{
+     font-weight: 700;
+     color: rgba(0,0,0,0.5);
+     font-size: 1.8rem;
+ }
+
+ /*#### Banner Styling ######*/
+  
+.banner{
+    /* border: 2px solid red; */
+    background-color: #e7ab9a;
+    color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.51);
+}
+.banner-line{
+    font-family: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.banner-btn{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3rem 2.5em;
+    letter-spacing: 0.5rem;
+    color: white;
+    margin: 1rem;
+}
+.banner .banner-left{
+    float: left;
+    width: 60%;
+
+}
+.banner .banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+
+}
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*###### Contact Page Styling #####*/
+
+.contact-frm{
+    padding: 5rem 0;
+    font-size: 2.5rem;
+    background: #f7f7f7;
+}
+
+.frm-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+.frm-wrapper .company-address{
+    height: 760px;
+    float: left;
+    width: 49%;
+    background: #fff;
+    padding: 1rem;
+}
+.frm-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.frm-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.frm-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+/*###### form Styling #######*/
+.frm-wrapper .frm{
+    height: 760px;
+    float: left;
+    width: 49%;
+    background: #fff;
+    padding: 1rem;
+}
+.frm-wrapper .frm h1::after{
+    content: '';
+    display: block;
+    border: 4px solid rgb(220, 28, 28);
+}
+.frm-wrapper .frm label{
+    display: block;
+}
+.frm-wrapper .frm input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.frm-wrapper .frm .form-group{
+    margin-bottom: 1.2rem;
+}
+.frm-wrapper .frm label::after{
+    content: '*';
+    color: rgb(236, 14, 14);
+}
+.frm-wrapper .frm textarea{
+    height: 1040%;
+    width: 100%;
+    padding: 1rem;
+
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: rgb(236, 14, 14);
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*##########  Media Quaries ##########*/
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .image-box, .row .text-box{
+        float: none;
+        width:100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px rgb(0,0,0,0.4);
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align:center;
+    }
+    .features .box-2, .features .box-3{
+        margin-top: 7rem;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .banner .banner-left,.banner .banner-right{
+        float: none;
+        width: 100%;
+        text-align:center ;
+    }
+    .banner-btn{
+        font-size: 2rem;
+    }
+    .frm-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .frm-wrapper .frm{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .count-item span{
+        font-size: 2.5rem;
+    }
+    .count-item p{
+        font-size: 1.5rem;
+    }
+}
+@media(min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .image-box, .row .text-box{
+        float: none;
+        width:100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px rgb(0,0,0,0.4);
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align:center;
+    }
+    .features .box-2, .features .box-3{
+        margin-top: 7rem;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .banner .banner-left,.banner .banner-right{
+        float: none;
+        width: 100%;
+        text-align:center ;
+    }
+    .frm-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .frm-wrapper .frm{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+}
+
+@media(orientation: landscape) and (max-height: 500px){
+    .header{
+        height: 90vmax;
+    }
+}

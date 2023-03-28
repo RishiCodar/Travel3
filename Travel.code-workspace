@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Travel",
+			"path": "."
+		},
+		{
+			"name": "vendor",
+			"path": "C:/Users/USER/Downloads/templatemo_551_stand_blog/templatemo_551_stand_blog/vendor"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Travel"
+	}
+}
