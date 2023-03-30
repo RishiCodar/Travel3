@@ -137,7 +137,9 @@ https://templatemo.com/tm-551-stand-blog
                   <div class="col">
                     <div >
                       <p style="color: rgba(0, 0, 0, 0.699);">Dehradun to Sankri <br>
-                    Altitude: 6,455 ft (1,920 m) Distance: 190 km<br> Time: 8-9 hrs (Drive)</p>
+                    Altitude: 6,455 ft (1,920 m)<br>
+                    Distance: 190 km<br> 
+                    Time: 8-9 hrs (Drive)</p>
                     </div>
                   </div>
                 </div>
@@ -153,7 +155,8 @@ https://templatemo.com/tm-551-stand-blog
                   <div class="col">
                     <div>
                       <p  style="color: rgba(0, 0, 0, 0.699);"> Sankri to Gangad via Taluka <br>
-                        Altitude: 8,855 ft (2,700 m)<br> Time: 7-9 hrs trek</p>
+                        Altitude: 8,855 ft (2,700 m)<br> 
+                        Time: 7-9 hrs trek</p>
                     </div>
                   </div>
                 </div>
@@ -301,7 +304,7 @@ https://templatemo.com/tm-551-stand-blog
           <a href="https://instagram.com/happytriptohimalaya?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fab fa-instagram fa-2x" style="color: black;"></i></a>
           <a href="https://youtube.com/@HappytriptoHimalaya-Treking" target="_blank"><i class="fab fa-youtube fa-2x" style="color: black;"></i></a>
       </div>
-      <p>Happy Trip To Himalaya &copy;2023, All Right Reserved</p>
+      <p>Happy Trip To Himalaya &copy; <span id="year"></span>, All Right Reserved</p>
   </footer>
 
     <!-- Bootstrap core JavaScript -->
@@ -329,7 +332,9 @@ https://templatemo.com/tm-551-stand-blog
       }
     </script>
 
-
-  </body>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</body>
 
 </html>

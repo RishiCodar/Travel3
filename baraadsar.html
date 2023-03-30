@@ -345,7 +345,7 @@ https://templatemo.com/tm-551-stand-blog
           <a href="https://instagram.com/happytriptohimalaya?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fab fa-instagram fa-2x" style="color: black;"></i></a>
           <a href="https://youtube.com/@HappytriptoHimalaya-Treking" target="_blank"><i class="fab fa-youtube fa-2x" style="color: black;"></i></a>
       </div>
-      <p>Happy Trip To Himalaya &copy;2023, All Right Reserved</p>
+      <p>Happy Trip To Himalaya &copy; <span id="year"></span>, All Right Reserved</p>
   </footer>
 
     <!-- Bootstrap core JavaScript -->
@@ -371,6 +371,9 @@ https://templatemo.com/tm-551-stand-blog
           t.style.color='#fff';
           }
       }
+    </script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 
 
